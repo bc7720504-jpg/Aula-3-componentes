@@ -1,0 +1,47 @@
+.pagina-professores {  
+    padding: 24px; 
+} 
+
+.cabecalho-professores {  
+    display: flex;  
+    justify-content: space-between;  
+    align-items: center;  
+    margin-bottom: 24px; 
+} 
+
+.cabecalho-professores h1 {  
+    font-size: 28px;  
+    color: #5b3f8c; 
+} 
+.tabela-professores {  
+    width: 100%;  
+    border-collapse: collapse;  
+    background-color: #f8f5ff; 
+}
+.tabela-professores th, 
+.tabela-professores td {  
+    padding: 14px;  
+    text-align: left;  
+    border-bottom: 1px solid #ded3f2; 
+} 
+
+.tabela-professores th {  
+    background-color: #e8def8;  
+    color: #49316f; } 
+    
+    .tabela-professores tbody tr:hover {  
+        background-color: #eee6fa; 
+    }
+
+  @media (max-width: 600px) {  
+    .cabecalho-professores {    
+        align-items: flex-start;    
+        flex-direction: column;  
+    }  
+    
+    .tabela-professores th,  
+    .tabela-professores td {    
+        padding: 8px;    
+        font-size: 13px;  
+    } 
+}  

@@ -1,0 +1,22 @@
+.cartao-indicador {  
+    background-color: white;  
+    border: 1px solid #ddd;  
+    border-radius: 8px;  padding: 20px;  
+    margin: 20px;  
+    min-width: 180px;  
+    flex: 1;  
+    box-shadow: 0 2px 5px #00000010; 
+    } 
+    
+    .cartao-indicador h3 {  
+        color: #555;  
+        font-size: 16px;  
+        margin-top: 0; 
+    } 
+    
+    .cartao-indicador p {  
+        color: #1e3a5f;  
+        font-size: 30px;  
+        font-weight: bold;  
+        margin-bottom: 0; 
+    }
