@@ -10,6 +10,21 @@ function Login() {
 
     const navegar = useNavigate()
 
+useEffect(()=>{
+
+async function testarConexao() {
+
+const { data, error } = await supabase.auth.getSession()
+
+if (error) {
+console.log("Erro ao consultar o Supabase:', error.message)
+} else {
+console.log('Cliente Supabase inicializado!')
+console.log('Sessao atual:', data.session)
+
+testarConexao()
+} [])
+
     function entrar(evento) {
     evento.preventDefault()
 
