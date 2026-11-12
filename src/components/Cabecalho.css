@@ -1,11 +1,11 @@
-.cabecalho {  
-    background-color: #192f69;  
-    color: rgb(235, 235, 238);  
-    padding: 20px;  
-    text-align: center; 
-} 
+.Cabecalho {
+    background-color:#1e3a5f;
+    color: white;
+    padding:30px;
+    text-align:center;
+}
 
-.cabecalho h1 {  
-margin: 0;  
-font-size: 26px; 
+.Cabecalho h1{
+    margin:0;
+    font-size: 26px;
 }

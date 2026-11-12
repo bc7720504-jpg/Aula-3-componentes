@@ -1,8 +1,24 @@
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+}
+.layout {
+  display: flex;
+}
+
+.conteudo{
+  flex: 1;
+  padding: 20px;
+}
+
+.indicadores {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  flex-wrap: wrap;
 }
 
 .logo {
