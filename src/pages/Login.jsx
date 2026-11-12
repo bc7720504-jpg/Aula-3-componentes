@@ -1,7 +1,8 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import CampoTexto from '../components/CampoTexto'
 import Botao from '../components/Botao'
+import { supabase } from '../supabase'
 import './Login.css'
 
 function Login() {
