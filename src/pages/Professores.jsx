@@ -1,3 +1,4 @@
+import PaginaLayout from '../components/PaginaLayout'
 import './Professores.css'
 
 function Professores() {
