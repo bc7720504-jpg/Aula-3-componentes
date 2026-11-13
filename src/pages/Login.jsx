@@ -30,7 +30,7 @@ function Login() {
 evento.preventDefault()
 
 const { data, error } = await
-supabase.auth.signlnWithPassword({
+supabase.auth.signInWithPassword({
 email: email,
 password: senha
 })
