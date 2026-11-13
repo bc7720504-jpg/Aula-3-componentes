@@ -26,14 +26,21 @@ function Login() {
     testarConexao()
   }, [])
 
-    function entrar(evento) {
-    evento.preventDefault()
+    async function entrar(evento) {
+evento.preventDefault()
 
-    if (email === 'teste@email.com' && senha === 'teste') {
-        navegar('/dashboard')
-    } else {
-        alert('E-mail ou senha incorretos!')
-    }
+const { data, error } = await
+supabase.auth.signlnWithPassword({
+email: email,
+password: senha
+})
+
+if (error) {
+alert('E-mail ou senha incorretos!')
+  return
+}
+
+navegar('/dashboard')
 }
 
     return (

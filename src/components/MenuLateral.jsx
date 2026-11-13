@@ -1,13 +1,24 @@
 import './MenuLateral.css'
 import { useNavigate, Link } from 'react-router-dom'
+import { supabase } from '../supabase'
 
 function MenuLateral() {
   /* COMENTARIO: Adicionei a função sair para redirecionar o 
      usuário para a página de login ao clicar no botão de sair */
   const navegar = useNavigate()
-  function sair() {
+   async function sair() {
+    const { error } = await supabase.auth.signOut()
+
+    console.log('Usuário fez logout no Supabase!')
+
+    if (error) {
+      alert('Erro ao sair do sistema!')
+      return
+    }
+
     navegar('/')
   }
+
 
   return (
     <aside className="menu-lateral">
