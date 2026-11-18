@@ -21,12 +21,12 @@ function App() {
                             <div className="indicadores">
                               <CartaoIndicador
                               titulo="Total de alunos"
-                              valor="323"
+                              valor="1"
                             />
 
                             <CartaoIndicador
                               titulo="Total de professores"
-                              valor="10"
+                              valor="3"
                             />
 
                             <CartaoIndicador
